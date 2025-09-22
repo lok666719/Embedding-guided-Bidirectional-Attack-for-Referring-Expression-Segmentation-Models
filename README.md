@@ -47,5 +47,6 @@ Just download this repository and open it using PyCharm (or your preferred IDE).
 Generate adversarial examples and evaluate:
 
 ```bash
-python adv_eval.py --ckpt checkpoints/your_model.pth --data-root path/to/refcoco/ --output results/adv_eval/
+python adv_eval.py --ckpt checkpoints/your_model.pth --data-root path/to/refcoco/ --output results/adv_examples/
+python adv_eval_test.py --ckpt checkpoints/your_model.pth --data-root path/to/refcoco/ --output results/eval/
 ```
