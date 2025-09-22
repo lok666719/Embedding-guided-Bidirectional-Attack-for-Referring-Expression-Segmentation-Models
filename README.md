@@ -8,11 +8,10 @@ We follow dataset preparation and conventions from EVF-SAM. Please obtain datase
 
 - **RefCOCO / RefCOCO+ / RefCOCOg**  
   Download / prepare following EVF-SAM instructions: https://github.com/hustvl/evf-sam?tab=readme-ov-file#-early-vision-language-fusion-for-text-prompted-segment-anything-model-
-
-- **Baselines / Related repos**  
-  - EVF-SAM, EVF-SAM2: https://github.com/hustvl/evf-sam?tab=readme-ov-file#-early-vision-language-fusion-for-text-prompted-segment-anything-model-  
-  - DMMI: https://github.com/toggle1995/RIS-DMMI/tree/main  
-  - LAVT: https://github.com/yz93/LAVT-RIS/tree/main?tab=readme-ov-file
+## RES Models 
+- EVF-SAM, EVF-SAM2: https://github.com/hustvl/evf-sam?tab=readme-ov-file#-early-vision-language-fusion-for-text-prompted-segment-anything-model-  
+- DMMI: https://github.com/toggle1995/RIS-DMMI/tree/main  
+- LAVT: https://github.com/yz93/LAVT-RIS/tree/main?tab=readme-ov-file
 
 > Note: Some datasets or model weights may require permission or registration from their original authors — follow the instructions in those repositories.
 
