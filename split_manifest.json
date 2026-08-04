@@ -1,0 +1,11 @@
+{
+  "datasets": ["refcoco", "refcocoplus", "refcocog"],
+  "seeds": [42, 211, 3407, 5325],
+  "num_images_per_seed": 750,
+  "settings": ["single_text", "multi_text"],
+  "single_text_rule": "the first expression of the first annotated object",
+  "multi_text_rule": "the first expression of each annotated object",
+  "evaluation_rule": "all remaining expressions of the corresponding objects",
+  "shared_across_models": true,
+  "shared_across_methods": true
+}
