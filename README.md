@@ -44,6 +44,7 @@ checkpoints/
 ├── dmmi_resnet/
 ├── dmmi_swin/
 └── lavt/
+```
 
 > Note: Some datasets or model weights may require permission or registration from their original authors — follow the instructions in those repositories.
 
