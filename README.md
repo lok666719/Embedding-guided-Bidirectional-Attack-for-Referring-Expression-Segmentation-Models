@@ -8,10 +8,41 @@ We follow dataset preparation and conventions from EVF-SAM. Please obtain datase
 
 - **RefCOCO / RefCOCO+ / RefCOCOg**  
   Download / prepare following EVF-SAM instructions: https://github.com/hustvl/evf-sam?tab=readme-ov-file#-early-vision-language-fusion-for-text-prompted-segment-anything-model-
-## RES Models 
-- EVF-SAM, EVF-SAM2: https://github.com/hustvl/evf-sam?tab=readme-ov-file#-early-vision-language-fusion-for-text-prompted-segment-anything-model-  
-- DMMI: https://github.com/toggle1995/RIS-DMMI/tree/main  
-- LAVT: https://github.com/yz93/LAVT-RIS/tree/main?tab=readme-ov-file
+## RES Models and Pretrained Checkpoints
+
+PEAT is evaluated on five RES model configurations: **EVF-SAM**, 
+**EVF-SAM2**, **DMMI with a ResNet backbone**, **DMMI with a Swin 
+Transformer backbone**, and **LAVT**.
+
+We do not redistribute pretrained model weights in this repository. 
+Please obtain the official model implementations and pretrained 
+checkpoints from the corresponding original repositories:
+
+- **EVF-SAM / EVF-SAM2**  
+  Official repository:  
+  https://github.com/hustvl/evf-sam
+
+- **DMMI (ResNet / Swin Transformer)**  
+  Official repository:  
+  https://github.com/toggle1995/RIS-DMMI
+
+- **LAVT**  
+  Official repository:  
+  https://github.com/yz93/LAVT-RIS
+
+Please follow the instructions provided in the corresponding repositories
+to download the pretrained checkpoints and prepare the model
+configurations.
+
+A recommended local directory structure is:
+
+```text
+checkpoints/
+├── evf_sam/
+├── evf_sam2/
+├── dmmi_resnet/
+├── dmmi_swin/
+└── lavt/
 
 > Note: Some datasets or model weights may require permission or registration from their original authors — follow the instructions in those repositories.
 
@@ -38,6 +69,25 @@ pycocotools\
 einops\
 ftfy\
 tqdm
+
+## Troubleshooting
+
+- **CUDA or PyTorch version mismatch:** Please ensure that PyTorch is
+  installed with CUDA 11.7 as specified in the environment file.
+
+- **Checkpoint not found:** Verify that the pretrained model checkpoint
+  path supplied to `--ckpt` matches the expected directory structure.
+
+- **Dataset path error:** Check that the RefCOCO/RefCOCO+/RefCOCOg
+  annotations and images follow the directory structure described in
+  the dataset preparation section.
+
+- **Out-of-memory error:** Reduce the batch size where applicable and
+  ensure sufficient GPU memory is available.
+
+- **Different evaluation results:** Verify that the provided fixed split
+  file and the same random seed are being used.
+
 ## Implementation
 Just download this repository and open it using PyCharm (or your preferred IDE).  
 
