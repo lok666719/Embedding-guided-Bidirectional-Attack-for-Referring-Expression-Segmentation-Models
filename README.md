@@ -1,10 +1,33 @@
 # Cross-Text Transferable Adversarial Attacks on Referring Expression Segmentation via Proxy Embedding Guidance
 
 ## Description
-We propose **Proxy-Embedding as an Adversarial Teacher (PEAT)** — an embedding-guided bidirectional adversarial attack framework for Referring Expression Segmentation (RES) models. The method crafts cross-text transferable adversarial examples by leveraging proxy embeddings as an adversarial teacher. The paper is currently under submission; detailed model diagrams and extended results will be released after acceptance.
+We propose **Proxy-Embedding as an Adversarial Teacher (PEAT)** — an embedding-guided bidirectional adversarial attack framework for Referring Expression Segmentation (RES) models. The method crafts cross-text transferable adversarial examples by leveraging proxy embeddings as an adversarial teacher. 
 
-## Datasets
-We follow dataset preparation and conventions from EVF-SAM. Please obtain datasets and follow their usage rules from the original projects.
+## Datasets and Data Splits
+
+We follow the dataset preparation conventions of EVF-SAM for
+**RefCOCO**, **RefCOCO+**, and **RefCOCOg**. Please obtain the datasets
+from the original sources and follow their corresponding licenses and
+usage requirements.
+
+Dataset preparation instructions can be found in the official EVF-SAM
+repository:
+
+- **RefCOCO / RefCOCO+ / RefCOCOg**  
+  https://github.com/hustvl/evf-sam
+
+The dataset splitting procedure used in our experiments is implemented
+in:
+
+[`utils/splite_dataset_new_random.py`](https://github.com/lok666719/PEAT/blob/main/utils/splite_dataset_new_random.py)
+
+This script is used to generate the image and referring-expression
+splits adopted in the experiments. The corresponding split information
+is also provided in `split_manifest.json` for reproducibility.
+
+> **Note:** Some datasets may require permission, registration, or
+> manual download from their original providers. We do not redistribute
+> the original datasets in this repository.
 
 - **RefCOCO / RefCOCO+ / RefCOCOg**  
   Download / prepare following EVF-SAM instructions: https://github.com/hustvl/evf-sam?tab=readme-ov-file#-early-vision-language-fusion-for-text-prompted-segment-anything-model-
