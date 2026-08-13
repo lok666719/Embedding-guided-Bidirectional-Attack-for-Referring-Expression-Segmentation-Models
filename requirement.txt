@@ -1,0 +1,22 @@
+Recommended: Linux, NVIDIA GPU, CUDA 11.7, conda/python 3.9.  
+Main dependencies (tested):
+python==3.9\
+torch==2.0.1+cu117\
+torchvision==0.15.2+cu117\
+torchaudio==2.0.2\
+transformers==4.45.2\
+accelerate==1.0.1\
+deepspeed==0.15.3\
+bitsandbytes==0.41.1\
+timm==0.4.12\
+opencv-python==4.10.0.84\
+pillow==9.4.0\
+numpy==1.23.2\
+scipy==1.11.2\
+matplotlib==3.9.2\
+pandas==2.2.3\
+safetensors\
+pycocotools\
+einops\
+ftfy\
+tqdm
