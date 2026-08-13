@@ -8,6 +8,7 @@ We follow dataset preparation and conventions from EVF-SAM. Please obtain datase
 
 - **RefCOCO / RefCOCO+ / RefCOCOg**  
   Download / prepare following EVF-SAM instructions: https://github.com/hustvl/evf-sam?tab=readme-ov-file#-early-vision-language-fusion-for-text-prompted-segment-anything-model-
+  
 ## RES Models and Pretrained Checkpoints
 
 PEAT is evaluated on five RES model configurations: **EVF-SAM**, 
