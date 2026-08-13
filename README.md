@@ -1,4 +1,4 @@
-# Proxy-Embedding as an Adversarial Teacher: An Embedding-Guided Bidirectional Attack for Referring Expression Segmentation Models
+# Cross-Text Transferable Adversarial Attacks on Referring Expression Segmentation via Proxy Embedding Guidance
 
 ## Description
 We propose **Proxy-Embedding as an Adversarial Teacher (PEAT)** — an embedding-guided bidirectional adversarial attack framework for Referring Expression Segmentation (RES) models. The method crafts cross-text transferable adversarial examples by leveraging proxy embeddings as an adversarial teacher. The paper is currently under submission; detailed model diagrams and extended results will be released after acceptance.
