@@ -71,6 +71,31 @@ checkpoints/
 
 > Note: Some datasets or model weights may require permission or registration from their original authors — follow the instructions in those repositories.
 
+## Cross-Text RES Robustness Evaluation Protocol
+
+In addition to the PEAT attack method, this repository provides a
+reproducible evaluation protocol for studying cross-text adversarial
+robustness in Referring Expression Segmentation (RES).
+
+The released protocol includes:
+
+- fixed image and referring-expression splits;
+- strictly disjoint optimization and evaluation expressions;
+- Single-Text and Multi-Text evaluation settings;
+- baseline attack implementations;
+- model and attack configurations;
+- scripts for adversarial-example generation and evaluation; and
+- reproducibility information for the experiments reported in the paper.
+
+The exact dataset splits used in the paper are provided in
+`split_manifest.json`, and the splitting procedure is implemented in
+[`utils/splite_dataset_new_random.py`](utils/splite_dataset_new_random.py).
+
+The protocol is intended to provide a common and reusable basis for
+evaluating whether adversarial images generated using a limited set of
+referring expressions remain effective under strictly unseen textual
+inputs.
+
 ## Requirement
 Recommended: Linux, NVIDIA GPU, CUDA 11.7, conda/python 3.9.  
 Main dependencies (tested):
